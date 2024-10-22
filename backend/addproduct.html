@@ -1,0 +1,26 @@
+<form method="post" action="http://localhost:8090/admin/add-product" enctype="multipart/form-data">
+    <input type="text" name="productname" placeholder="Product Name"> <br>
+    <input type="text" name="productprice" placeholder="Product Price"> <br>
+    <input type="text" name="productdiscount" placeholder="Product Discount"> <br>
+
+    <select name="categoryid" id =''>
+        <option value="1">Men</option>
+        <option value="2">Women</option>
+        <option value="3">Kids</option>
+    </select>
+    <br>
+    <select name="brandid" id =''>
+        <option value="10">Nike</option>
+        <option value="20">Adidas</option>
+        <option value="30">USPA</option>
+    </select>
+    <br>
+
+    
+    <input type="file" name="productpath">
+    <br>
+
+    <textarea name="productdescription" id="" placeholder="Product description" cols="30" rows="10"></textarea><br>
+
+    <button>Upload</button>
+</form>

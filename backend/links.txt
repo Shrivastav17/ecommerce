@@ -1,0 +1,3 @@
+http://localhost:8090/brands/show-brand
+
+http://localhost:8090/categories/show-category

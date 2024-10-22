@@ -1,0 +1,39 @@
+<input type="text" id="temp" placeholder="Enter in Celsius..."><br>
+<button onclick="myfunc()">Convert to Fahrenheit</button>
+<p id="ans"></p>
+
+<script>
+    function myfunc(){
+        celsius = document.getElementById('temp').value;
+        console.log(celsius)
+
+        fahr = (celsius * 9/5) + 32;
+        console.log(fahr)
+
+        document.getElementById('ans').innerText = fahr
+    }
+</script>
+<style>
+    body{
+        width: 200px;
+    }
+    input{
+        width: 200px;
+        height: 35px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin-bottom: 2px;
+    }
+    button{
+        padding: 8px;
+        width: 200px;
+        border: 2px solid gray;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+    p{
+        font-size: 35px;
+        margin-top: -2px;
+        text-align: center;
+    }
+</style>
